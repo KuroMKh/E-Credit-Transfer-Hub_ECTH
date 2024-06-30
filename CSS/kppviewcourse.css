@@ -1,0 +1,78 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+/* Apply the font family to all content */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 92%;
+  padding: 10px;
+}
+
+.h4-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  max-width: calc(100% - 160px);
+  /* Adjust the value based on button width and any additional padding/margin */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 20px;
+}
+
+.h4-container strong {
+  color: #15395a;
+}
+
+.navbar.shadow-sm-custom {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  /* Adjust opacity (last parameter) as needed */
+}
+
+.btn-nav {
+  margin-top: 5px;
+  /* Adjust margin-top as needed */
+  margin-bottom: 5px;
+  /* Adjust margin-bottom as needed */
+}
+
+/* Styling for the table header */
+.table thead th {
+  background-color: #002d72;
+  color: white;
+  text-align: center;
+  /* Center the text */
+}
+
+/* Styling for table cells */
+.table tbody td {
+  text-align: center;
+  /* Center the text */
+}
+
+/* Padding for table cells */
+.table td,
+.table th {
+  padding: 0.75rem;
+}
+
+/* Border for table */
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+/* Style for buttons within table */
+.table .btn {
+  margin: 0;
+}
+
+/* Shadow for the card */
+.custom-card {
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+}

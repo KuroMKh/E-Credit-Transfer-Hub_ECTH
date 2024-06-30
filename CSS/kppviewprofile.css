@@ -1,0 +1,240 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+/* Apply the font family to all content */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 92%;
+  padding: 10px;
+}
+
+.h4-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  max-width: calc(
+    100% - 160px
+  ); /* Adjust the value based on button width and any additional padding/margin */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 20px;
+}
+
+.navbar.shadow-sm-custom {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Adjust opacity (last parameter) as needed */
+}
+
+.btn-nav {
+  margin-top: 5px; /* Adjust margin-top as needed */
+  margin-bottom: 5px; /* Adjust margin-bottom as needed */
+}
+
+/* Add structure and formal styling to card content */
+.card-body {
+  overflow: auto;
+}
+
+.card-style1 {
+  box-shadow: 0px 0px 10px 0px rgb(89 75 128 / 9%);
+}
+
+.border-0 {
+  border: 0 !important;
+}
+
+.fa.fa-arrow-left {
+  color: white;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-style1 {
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1); /* Adjust the shadow values as needed */
+}
+
+.card-hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a shadow on hover */
+  transform: translateY(-5px); /* Move the card up slightly on hover */
+  transition: all 0.3s ease; /* Add smooth transition */
+}
+
+/* Add margin top to the container holding all cards */
+.container-cards {
+  margin-top: 40px;
+}
+
+/* Style for headings within card content */
+.card-body h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #15395a;
+  margin-bottom: 1rem;
+}
+
+/* Style for card content lists */
+.card-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for list items within card content */
+.card-body li {
+  margin-bottom: 0.5rem;
+  color: #3f3f3f;
+}
+
+/* Style for profile image */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Style for section titles */
+.section-title {
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Primary text color */
+.text-primary {
+  color: #ceaa4d !important;
+}
+
+/* Secondary text color */
+.text-secondary {
+  color: #15395a !important;
+}
+
+.card-body strong {
+  color: #15395a;
+}
+
+.h4-container strong {
+  color: #15395a;
+}
+
+/* Font weight */
+.font-weight-600 {
+  font-weight: 600;
+}
+
+/* Font size for specific elements */
+.display-26 {
+  font-size: 1.3rem;
+}
+
+/* Padding for different screen sizes */
+@media screen and (min-width: 992px) {
+  .p-lg-7 {
+    padding: 4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-md-6 {
+    padding: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .p-sm-2-3 {
+    padding: 2.3rem;
+  }
+}
+
+.p-1-9 {
+  padding: 1.9rem;
+}
+
+/* Background styling for secondary elements */
+.bg-secondary {
+  background: #15395a !important;
+}
+
+@media screen and (min-width: 576px) {
+  .pe-sm-6,
+  .px-sm-6 {
+    padding-right: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .ps-sm-6,
+  .px-sm-6 {
+    padding-left: 3.5rem;
+  }
+}
+
+.pe-1-9,
+.px-1-9 {
+  padding-right: 1.9rem;
+}
+
+.ps-1-9,
+.px-1-9 {
+  padding-left: 1.9rem;
+}
+
+.pb-1-9,
+.py-1-9 {
+  padding-bottom: 1.9rem;
+}
+
+.pt-1-9,
+.py-1-9 {
+  padding-top: 1.9rem;
+}
+
+.mb-1-9,
+.my-1-9 {
+  margin-bottom: 1.9rem;
+}
+
+@media (min-width: 992px) {
+  .d-lg-inline-block {
+    display: inline-block !important;
+  }
+}
+
+.rounded {
+  border-radius: 0.25rem !important;
+}
+
+.custom-card {
+  height: 250px; /* Adjust as needed */
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bold-quote {
+  font-weight: bold;
+}

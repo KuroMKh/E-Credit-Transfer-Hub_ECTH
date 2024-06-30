@@ -1,0 +1,226 @@
+/* Google Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif; /* Set default font family */
+  background: #fafafa; /* Set background color */
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit; /* Inherit color for links */
+  text-decoration: none; /* Remove default underline */
+  transition: all 0.3s; /* Add transition effect */
+}
+
+/* Navbar Styles */
+.navbar {
+  padding: 15px 10px; /* Set padding */
+  background: #fff; /* Set background color */
+  border: none; /* Remove border */
+  border-radius: 0; /* Remove border radius */
+  margin-bottom: 40px; /* Set margin bottom */
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.navbar-btn {
+  box-shadow: none; /* Remove box shadow */
+  outline: none !important; /* Remove outline */
+  border: none; /* Remove border */
+}
+
+.line {
+  width: 100%; /* Set width */
+  height: 1px; /* Set height */
+  border-bottom: 1px dashed #ddd; /* Add dashed border */
+  margin: 40px 0; /* Set margin */
+}
+
+/* Sidebar Styles */
+.wrapper {
+  display: flex; /* Use flexbox for layout */
+  width: 100%; /* Set width */
+  align-items: stretch; /* Stretch items */
+}
+
+#sidebar {
+  min-width: 250px; /* Set minimum width */
+  max-width: 250px; /* Set maximum width */
+  background: #103cbe; /* Set background color */
+  color: #fff; /* Set text color */
+  transition: all 0.3s; /* Add transition effect */
+}
+
+#sidebar.active {
+  margin-left: -250px; /* Hide sidebar when inactive */
+}
+
+#sidebar .sidebar-header {
+  padding: 20px; /* Set padding */
+  background: #103cbe; /* Set background color */
+}
+
+#sidebar ul.components {
+  padding: 20px 0; /* Set padding */
+  border-bottom: 1px solid #47748b; /* Add border bottom */
+}
+
+#sidebar ul p {
+  color: #fff; /* Set text color */
+  padding: 10px; /* Set padding */
+}
+
+#sidebar ul li a {
+  padding: 10px; /* Set padding */
+  font-size: 1.1em; /* Set font size */
+  display: block; /* Display as block */
+}
+
+#sidebar ul li a:hover {
+  color: #7386d5; /* Change text color on hover */
+  background: #fff; /* Change background on hover */
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  color: #fff; /* Set text color */
+  background: #6d7fcc; /* Set background color */
+}
+
+a[data-toggle="collapse"] {
+  position: relative; /* Set position */
+}
+
+.dropdown-toggle::after {
+  display: block; /* Display as block */
+  position: absolute; /* Set position */
+  top: 50%; /* Set top position */
+  right: 20px; /* Set right position */
+  transform: translateY(-50%); /* Adjust position */
+}
+
+ul ul a {
+  font-size: 0.9em !important; /* Set font size */
+  padding-left: 30px !important; /* Set padding */
+  background: #5776d1; /* Set background color */
+}
+
+ul.CTAs {
+  padding: 20px; /* Set padding */
+}
+
+ul.CTAs a {
+  text-align: center; /* Center text */
+  font-size: 0.9em !important; /* Set font size */
+  display: block; /* Display as block */
+  border-radius: 5px; /* Set border radius */
+  margin-bottom: 5px; /* Set margin bottom */
+}
+
+a.logout,
+a.logout:hover {
+  background: #5776d1 !important; /* Set background color */
+  color: #fff !important; /* Set text color */
+}
+
+/* Content Styles */
+#content {
+  width: 100%; /* Set width */
+  padding: 20px; /* Set padding */
+  min-height: 100vh; /* Set minimum height */
+  transition: all 0.3s; /* Add transition effect */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px; /* Hide sidebar on small screens */
+  }
+  #sidebar.active {
+    margin-left: 0; /* Show sidebar when active on small screens */
+  }
+  #sidebarCollapse span {
+    display: none; /* Hide collapse span */
+  }
+}
+
+/* Order Card Styles */
+.order-card {
+  color: #fff; /* Set text color */
+}
+
+.bg-c-green {
+  background: linear-gradient(
+    45deg,
+    #2ed8b6,
+    #59e0c5
+  ); /* Set background gradient */
+}
+
+.bg-c-yellow {
+  background: linear-gradient(
+    45deg,
+    #ffb64d,
+    #ffcb80
+  ); /* Set background gradient */
+}
+
+.pending {
+  font-weight: bold; /* Set font weight */
+  color: #ffd700; /* Set text color */
+}
+
+.card {
+  border-radius: 5px; /* Set border radius */
+  -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16); /* Set box shadow */
+  box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16); /* Set box shadow */
+  border: none; /* Remove border */
+  margin-bottom: 30px; /* Set margin bottom */
+  -webkit-transition: all 0.3s ease-in-out; /* Add transition effect */
+  transition: all 0.3s ease-in-out; /* Add transition effect */
+}
+
+.card .card-block {
+  padding: 25px; /* Set padding */
+}
+
+.order-card i {
+  font-size: 26px; /* Set font size */
+}
+
+.f-left {
+  float: left; /* Float left */
+}
+
+.f-right {
+  float: right; /* Float right */
+}
+
+table td,
+table th {
+  white-space: normal; /* Change to normal */
+  text-overflow: ellipsis; /* Set text overflow */
+  overflow: hidden; /* Hide overflow */
+  text-align: center; /* Center text horizontally */
+  vertical-align: middle; /* Center text vertically */
+}
+
+.card {
+  border-radius: 0.5rem; /* Set border radius */
+}
+
+.mask-custom {
+  background: rgba(24, 24, 16, 0.2); /* Set background color */
+  border-radius: 2em; /* Set border radius */
+  backdrop-filter: blur(25px); /* Apply backdrop filter */
+  border: 2px solid rgba(255, 255, 255, 0.05); /* Set border */
+  background-clip: padding-box; /* Clip background */
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03); /* Set box shadow */
+}
+
+.table-responsive {
+  max-height: 200px; /* Adjust height as needed */
+  overflow-y: auto;
+}

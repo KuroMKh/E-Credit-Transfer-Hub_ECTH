@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif; /* Use Google Font Poppins */
+  background-color: #f9f6f2; /* Light gray background color */
+  margin: 0; /* Remove default margin */
+  padding: 0;
+  min-height: 100vh;
+}
+
+h2 {
+  font-size: 1.25rem; /* Small font size */
+  font-weight: bold; /* Strong font weight */
+  color: #696969; /* Light gray font color */
+}
+
+.card {
+  margin-top: 100px; /* Adjust the margin from the top */
+}
+
+.card-body {
+  padding: 2rem; /* Padding inside the card body */
+}
+
+.form-floating {
+  position: relative;
+}
+
+.form-floating input[type="email"],
+.form-floating input[type="password"] {
+  padding: 1rem; /* Set the same padding for both textboxes */
+  border: 1px solid #ced4da; /* Light border color */
+  border-radius: 5px; /* Rounded corners */
+  width: 100%; /* Ensure textboxes take up full width */
+}
+
+.form-floating input[type="email"]:focus,
+.form-floating input[type="password"]:focus {
+  outline: none;
+  border-color: #4e73df; /* Focus border color */
+  box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25); /* Change border color and add shadow on focus */
+}
+
+.form-floating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #103cbe; /* Primary button background color */
+  width: 100%; /* Make the login button full width */
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #375abb; /* Darker color on hover */
+}
+
+.link-primary {
+  color: #4e73df; /* Primary link color */
+}
+
+.link-primary:hover {
+  color: #375abb; /* Darker color on hover */
+}
+
+.toggle-password {
+  cursor: pointer;
+  color: #6c757d; /* Eye icon color */
+}
+
+.toggle-password:hover {
+  color: #495057; /* Darker color on hover */
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.form-floating:hover label {
+  color: inherit;
+}
+
+.form-control {
+  width: 100%;
+}

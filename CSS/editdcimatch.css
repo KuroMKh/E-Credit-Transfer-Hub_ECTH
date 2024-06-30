@@ -1,0 +1,63 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+/* Apply the font family to all content */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Styling for the navbar */
+.navbar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 92%;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  /* Adding shadow */
+}
+
+.navbar-text-container {
+  margin-left: 565px; /* Adjust margin-right as needed */
+  display: flex;
+  align-items: center;
+}
+
+.navbar-text {
+  margin: 0;
+}
+
+/* Styling for header background */
+.header-bg {
+  background-color: #103cbe;
+  padding: 10px 20px;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+/* Styling for header title */
+.header-title {
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Styling for toggle button */
+#toggleContainer {
+  margin-bottom: 10px;
+}
+
+/* Styling for the card container */
+.card-container {
+  margin-top: 10px;
+  padding: 20px;
+}
+
+/* Adjusted padding for container */
+.container {
+  padding: 0;
+}
+
+.task-container {
+  border-radius: 10px;
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 15px; /* Add padding for spacing */
+}

@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #4070f4, #ffffff);
+  min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  text-align: center; /* Center align content */
+}
+
+.card-container {
+  margin-top: 30px;
+}
+
+.table-container {
+  width: 100%;
+  margin: 20px auto;
+  overflow-x: auto; /* Add horizontal scroll if needed */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  white-space: nowrap; /* Prevent line breaks in table cells */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  width: max-content; /* Allow table to expand beyond viewport width */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  padding: 10px;
+  word-wrap: break-word;
+  white-space: normal;
+  font-family: "Poppins", sans-serif;
+  vertical-align: middle;
+  text-align: center;
+}
+
+th {
+  color: white;
+}
+
+.narrow-column,
+.course-code-column,
+.course-name-column,
+.credit-hour-column,
+.grade-column,
+.file-column,
+.action-column {
+  width: 10%;
+}
+
+.course-code-column,
+.course-name-column,
+.credit-hour-column,
+.grade-column,
+.file-column,
+.action-column {
+  min-width: 100px;
+}
+
+.narrow-column {
+  width: 5%;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  table {
+    font-size: 12px;
+  }
+}
